@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>註冊 - 健身房管理系統</title>
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #28a745;
+        }
+        .btn-primary {
+            background: #28a745;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #218838;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #343a40;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>註冊會員</h1>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="name">姓名：</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">年齡：</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="birthday">生日：</label>
+                <input type="date" class="form-control" id="birthday" name="birthday" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">聯絡電話：</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="membeerID">ID：</label>
+                <input type="text" class="form-control" id="membeerID" name="membeerID" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">註冊</button>
+        </form>
+    </div>
+</body>
+</html>
